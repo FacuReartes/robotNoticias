@@ -1,0 +1,11 @@
+Librerias utilizadas: axios (realiza los fetch), 
+fs (manejo del archivo de texto), nodemailer (envío de mail)
+
+Apis utilizadas: primera API de noticias "Mediastack.com",
+segunda API de noticias "Newsdata.io"
+
+El script realiza dos GET a las API de noticias y estructura la data segun una misma clase
+luego verifica que la data no se haya entregado anteriormente. Esto lo hace mediante
+un archivo de texto que compila los titulos de las noticias ya enviadas, simplemente compara los titulos.
+Finalmente envia un mail con la data compilada.
+
