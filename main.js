@@ -23,7 +23,7 @@ class Noticia {
     const url = 'http://api.mediastack.com/v1/news'
 
     const params = {
-        access_key: '102188c154dc25b48591f32a21e1c474',
+        access_key: 'key privada',
         keywords: 'Brahman',
         countries: 'ar, br, co, us, mx, au',
         limit: 2
@@ -47,7 +47,7 @@ class Noticia {
     const url2 = 'https://newsdata.io/api/1/news'
 
     const params1 = {
-        apikey: 'pub_35930838f90b234ebfd0687d2c68d6ae130be',
+        apikey: 'key privada',
         q: 'Brahman',
         country: 'us,ar,au,mx,br',
         size: 2
@@ -95,15 +95,15 @@ class Noticia {
             port: 465,
             secure: true,
             auth: {
-                user: "facureartes9@gmail.com",
-                pass: "aagy dabp hgra udme"
+                user: "mail",
+                pass: "contraseña"
             },
         });
     
         dataFiltrada.forEach(noti => {
             const info = transporter.sendMail({
-                from: 'facureartes9@gmail.com',
-                to: 'archivosmedia2019@gmail.com',
+                from: 'mail ',
+                to: 'mail receptor',
                 subject: `NUEVA NOTICIA: ${noti.titulo}`,
                 text: `Descripción: ${noti.descripcion} 
                 \nFecha: ${noti.fecha}
